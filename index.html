@@ -20,5 +20,12 @@
 
   <p><a href="mysitepage2.html" target="_blank" title="Вторая страница">куда ведёт ссылка</a></p>  
 
+   <script>
+     document.addEventListener("click", function(event) {
+     gtag ('event', 'link_click',{
+       'link_url' : 'event.target.href'
+     });
+     })
+   </script>
  </body>
 </html>
