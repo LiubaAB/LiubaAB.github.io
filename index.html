@@ -1,22 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!--   Закомментировать строку "Ctrl+/" -->
+  
+<!--Установка Google tag (gtag.js)  -->
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XY3MWJ421W"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XY3MWJ421W"></script> -->
+<!--   <script> -->
+<!--   window.dataLayer = window.dataLayer || []; -->
+<!--   function gtag(){dataLayer.push(arguments);} -->
+<!--   gtag('js', new Date()); -->
+<!--   gtag('config', 'G-XY3MWJ421W'); -->
+<!-- </script> -->
 
-  gtag('config', 'G-XY3MWJ421W');
-</script>
+<!-- Установка GTM  -->
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MBBRRQN8');</script>
+<!-- End Google Tag Manager -->
 
-
+  
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <title>Моя первая веб-страница</title>
  </head>
  <body>
-
+<!-- Установка GTM  -->
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MBBRRQN8"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
  
 
   <h1>Заголовок страницы</h1>
@@ -24,17 +39,23 @@
 
   <p><a id = 123 href="mysitepage2.html" target="_blank" title="Вторая страница">куда ведёт ссылка</a></p>  
 
-//Click event is collected by gtag and sent to GA4
-  <script>
-  document.addEventListener("click", function(event) {
-     if (event.target.id === '123') {
-       gtag ('event', 'link_click', {
-         'link_id': event.target.id,
-       'link_url' : event.target.href,
-       'link_text' : event.target.innerText
-       });
-       } 
-    });
-    </script>
+   
+<!-- Click event is collected by gtag and sent to GA4 -->
+<!--    Полезные материалы: -->
+<!-- https://www.youtube.com/watch?v=R07EpRLTeW8  -->
+<!--    https://developers.google.com/tag-platform/gtagjs/reference#event -->
+<!--    https://support.google.com/analytics/answer/9216061?hl=en -->
+<!--    Код -->
+<!--   <script> -->
+<!--   document.addEventListener("click", function(event) { -->
+<!--      if (event.target.id === '123') { -->
+<!--        gtag ('event', 'link_click', { -->
+<!--          'link_id': event.target.id, -->
+<!--        'link_url' : event.target.href, -->
+<!--        'link_text' : event.target.innerText -->
+<!--        }); -->
+<!--        }  -->
+<!--     }); -->
+<!--     </script> -->
  </body>
 </html>
