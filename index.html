@@ -27,9 +27,14 @@
   <script>
   document.addEventListener(
     "click", function(event) {
-     console.log(event);
-        } 
-  );
+     if (event.target.localName === 'a') {
+       gtag ('event', 'link_click', {
+         'link_id': event.target.id,
+       'link_url' : event.target.href,
+       'link_text' : event.target.innerText
+       });
+       } 
+    });
     </script>
  </body>
 </html>
