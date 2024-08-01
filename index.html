@@ -24,10 +24,14 @@
 
   <p><a id = 123 href="mysitepage2.html" target="_blank" title="Вторая страница">куда ведёт ссылка</a></p>  
 
+ <script>
+   gtag ('event', 'any_click');
+ </script>
+   
   <script>
   document.addEventListener(
     "click", function(event) {
-     if (event.target.localName === 'a') {
+     if (event.target.id === '123') {
        gtag ('event', 'link_click', {
          'link_id': event.target.id,
        'link_url' : event.target.href,
